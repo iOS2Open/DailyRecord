@@ -46,10 +46,10 @@ HGPerson 继承于 NSObject，所以 HGPerson 是 NSObject 的子类。箭头是
 
 ### 八、工具
 #### 8.1 OmniGraffle
-![OmniGraffle.png](./Resource/png/OmniGraffle.png)
+<center><image src="Resource/png/OmniGraffle.png"/></center>
 
 
 #### 8.2 StarUML
-![StarUML.png](./Resource/png/StarUML.png)
+<center><image src="Resource/png/StarUML.png"/></center>
 
  
