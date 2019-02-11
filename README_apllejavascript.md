@@ -105,3 +105,32 @@ tell app "Address Book" to get the name of every person
 
 
 ```
+
+使用 MacApp 来执行，文件(HGMacDev)内容如下：  
+```
+#!/usr/bin/osascript
+
+say "Let's study applescript" using "Fred"
+
+beep 5
+```
+
+OC 代码如下：  
+```
+- (void)click {
+    NSBundle *bunlde = [NSBundle mainBundle];
+    NSString *scriptPath = [bunlde pathForResource:@"HGMacDev"
+                                            ofType:nil
+                                       inDirectory:nil];
+    NSLog(@"%@",scriptPath);
+    if (scriptPath)
+    {
+        NSTask *task = [[NSTask alloc] init];
+        NSArray *a = [NSArray arrayWithObjects:scriptPath, nil];
+        task = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/osascript" arguments:a];
+        
+        NSLog(@"%@",task);
+    }
+    
+}
+```
