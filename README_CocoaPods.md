@@ -69,6 +69,8 @@ p $hash_value
 
 
 ### Podfile 常用语法
+
+参考：[Podfile语法参考](https://www.jianshu.com/p/8af475c4f717)  
 master 最新:  
 ```
 pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git'
