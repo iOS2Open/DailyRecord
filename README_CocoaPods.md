@@ -65,3 +65,27 @@ p $hash_value
 ```
 {"source"=>"http://source.git", "platform"=>:ios, "version"=>"8.0", "targets"=>["HGProject"], "pods"=>["AFNetworking", "SDWebImage", "Masonry", "Typeset", "BlocksKit", "Mantle", "IQKeyboardManager", "IQDropDownTextField"]}
 ```
+
+
+
+### Podfile 常用语法
+master 最新:  
+```
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git'
+```
+
+其他分支:  
+```
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :branch => 'dev'
+```
+
+某个tag:  
+```
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :tag => '0.7.0'
+```
+
+
+提交记录:  
+```
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :commit => '082f8319af'
+```
