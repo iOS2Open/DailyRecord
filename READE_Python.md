@@ -70,3 +70,16 @@ print(s0) # 中国风
 print(s1) # 中国
 ```
 
+
+## 查找 WechatOpenSDK 的路径：  
+```
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import os
+
+rootdir = "/Users/zhuhong/.cocoapods/repos/edu-git-cocoapods-specs/Specs"
+for i in os.walk(rootdir):
+    if "WechatOpen" in i[0]:
+        print(i)
+```
+
