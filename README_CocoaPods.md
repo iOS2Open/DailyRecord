@@ -91,3 +91,8 @@ pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :tag 
 ```
 pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :commit => '082f8319af'
 ```
+
+项目环境配置：  
+```
+pod 'DebugTools', :configurations => ['Debug']
+```
