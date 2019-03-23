@@ -63,9 +63,9 @@ ok
 - (void)arrMessages:(NSArray*)arrMessages tempArrM:(NSMutableArray*)tempArrM {
     NSInteger tempInteger = arrMessages.count-1;
     for (NSInteger j=(tempArrM.count-1); j>=0; j--) {
-        UCARIMMessage *imMessage  = tempArrM[j]; // 新的
+        Message *imMessage  = tempArrM[j]; // 新的
         for (NSInteger i=tempInteger; i>=0; i--) {
-            UCARIMMessage *lastIMMessage = arrMessages[i];
+            Message *lastIMMessage = arrMessages[i];
             if (j==0) {
                 
                 if (imMessage.timestamp < lastIMMessage.timestamp) {
