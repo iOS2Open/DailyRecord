@@ -55,3 +55,36 @@
     
 }
  ```
+
+ok 
+
+ ```
+ // 把 arrMessages d放进 arrM 中
+- (void)arrMessages:(NSArray*)arrMessages tempArrM:(NSMutableArray*)tempArrM {
+    NSInteger tempInteger = arrMessages.count-1;
+    for (NSInteger j=(tempArrM.count-1); j>=0; j--) {
+        UCARIMMessage *imMessage  = tempArrM[j]; // 新的
+        for (NSInteger i=tempInteger; i>=0; i--) {
+            UCARIMMessage *lastIMMessage = arrMessages[i];
+            if (j==0) {
+                
+                if (imMessage.timestamp < lastIMMessage.timestamp) {
+                    [tempArrM insertObject:lastIMMessage atIndex:(j+1)];
+                    tempInteger = i-1;
+                }
+                
+                if (tempInteger >= 0) {
+                    NSArray *arr = [arrMessages subarrayWithRange:NSMakeRange(0, i)];
+                    [tempArrM insertObjects:arr atIndexes: [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, i)]];
+                }
+                
+                break;
+            } else if (imMessage.timestamp < lastIMMessage.timestamp) {
+                [tempArrM insertObject:lastIMMessage atIndex:(j+1)];
+                tempInteger = i-1;
+                break;
+            }
+        }
+    }
+}
+ ```
