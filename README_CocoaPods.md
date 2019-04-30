@@ -108,10 +108,16 @@ post_install do |installer|
 end
 ```
 
-安装指定版本：
+安装指定[版本](https://www.cnblogs.com/shenhongbang/p/4409360.html)：  
 ```ruby
 sudo gem install cocoapods -v 1.5.3
 ```
+
+移除指定版本：  
+```ruby
+sudo gem uninstal cocoapods-core
+```
+如果有多个版本， 会有版本提示。
 
 
 
