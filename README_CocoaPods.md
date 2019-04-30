@@ -107,3 +107,11 @@ post_install do |installer|
   end
 end
 ```
+
+安装指定版本：
+```ruby
+sudo gem install cocoapods -v 1.5.3
+```
+
+
+
