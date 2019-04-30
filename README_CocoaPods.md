@@ -108,6 +108,11 @@ post_install do |installer|
 end
 ```
 
+通过以下命令可以检测：  
+```ruby
+gem list
+```
+  
 安装指定[版本](https://www.cnblogs.com/shenhongbang/p/4409360.html)：  
 ```ruby
 sudo gem install cocoapods -v 1.5.3
