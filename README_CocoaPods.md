@@ -108,7 +108,7 @@ post_install do |installer|
 end
 ```
 
-通过以下命令可以检测：  
+通过以下命令可以[检测](https://www.jianshu.com/p/268543056155)：  
 ```ruby
 gem list
 ```
