@@ -153,3 +153,33 @@ ok
 
 LLDB 比较完整的好文：  
 https://objccn.io/issue-19-2/
+
+
+
+```objc
+/// 属性
+    var yesOrNo = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        if yesOrNo {
+            print("这是太好了, 条件是真")
+        } else {
+            print("很遗憾, 条件不满足")
+        }
+    }
+    
+    /// 文本控件
+    @IBOutlet weak var hgLabel: UILabel!
+    
+    /// 事件
+    @IBAction func btn1(_ sender: Any) {
+        print("btn1 被触发")
+        hgLabel.text = "btn1"
+    }
+    @IBAction func btn2(_ sender: Any) {
+        hgLabel.text = "btn2"
+    }
+    ```
