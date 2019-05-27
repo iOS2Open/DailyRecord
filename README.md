@@ -183,3 +183,27 @@ https://objccn.io/issue-19-2/
         hgLabel.text = "btn2"
     }
     ```
+
+```
+// touch
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    // 调用开始
+    os_log_t osObj = os_log_create("hg-cubsystem", "hg-category");
+    os_signpost_interval_begin(osObj, 6666, "hg-name");
+    
+    // 调用测试代码
+    [self testSleep];
+    
+    // 调用结束
+    os_signpost_interval_end(osObj, 6666, "hg-name");
+}
+
+// 测试代码
+- (void)testSleep {
+    for (NSInteger j=0; j<5; j++) {
+        for (NSInteger i=0; i<10000; i++) {
+            NSLog(@"%zd", i);
+        }
+    }
+}
+```
