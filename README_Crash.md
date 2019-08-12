@@ -3,6 +3,7 @@
 find /Applications -name symbolicatecrash -type f  
 ```
 
+开始解析 crash 堆栈  
 
 ```
 ./symbolicatecrash x.crash x.dSYM > log.crash
