@@ -1,3 +1,8 @@
+找到本机 `symbolicatecrash` 的位置  
+```
+find /Applications -name symbolicatecrash -type f  
+```
+
 
 ```
 ./symbolicatecrash x.crash x.dSYM > log.crash
