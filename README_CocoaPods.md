@@ -125,4 +125,5 @@ sudo gem uninstal cocoapods-core
 如果有多个版本， 会有版本提示。
 
 
+[[iOS] 基于CocoaPods 实现对XcodeProject的管理](https://www.jianshu.com/p/0bf291de94f7)
 
