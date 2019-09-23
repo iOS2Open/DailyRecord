@@ -126,4 +126,7 @@ sudo gem uninstal cocoapods-core
 
 
 [[iOS] 基于CocoaPods 实现对XcodeProject的管理](https://www.jianshu.com/p/0bf291de94f7)
+[Podspec Syntax Reference](https://guides.cocoapods.org/syntax/podspec.html#specification)
+[Gradle Xcode Plugin](http://openbakery.org/gxp/)
+[Using a Gemfile](https://guides.cocoapods.org/using/a-gemfile.html)
 
